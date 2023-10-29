@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const queryString = document.location.search;
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
-    const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
+    const url = "http://cms.local/wp-json/wc/store/products/" + id;
 
     async function callApi() {
         try {
@@ -20,14 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function createHtml(result) {
         productContainer.innerHTML = `<div class="jacket-image-box">
-                                    <img alt="${result.title}" class="jacket-image" src="${result.image}">
+                                    <img alt="${result.title}" class="jacket-image" src="${result.images[0].src}">
                                 </div>
                                 <div class="jacket-info">
-                                    <p class="jacket-title">${result.title}</p>
+                                    <p class="jacket-title">${result.name}</p>
                                     <p class="jacket-description">${result.description}</p>
-                                    <p><span class="p1">Price : </span>${result.price} $</p>
-                                    <p><span class="p1">Color : </span>${result.baseColor}</p>
-                                    <p><span class="p1">Size : </span>${result.sizes}</p>
+                                    <p><span class="p1">Price : </span>${result.prices.price} kr</p>
+                                    <p><span class="p1">Size : </span>${result.attributes[0].terms[0].name[1]}</p>
                                     <a href="products-detail.html?id=${result.id}"><button class="buy-now-button">Go to checkout</button></a>
                                 </div>`;
     }

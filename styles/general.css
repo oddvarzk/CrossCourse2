@@ -153,3 +153,6 @@ nav,
         padding-top: 10px;
     }
 }
+#text{
+    display: flex;
+}

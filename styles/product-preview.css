@@ -9,6 +9,7 @@ body {
 p {
     margin: 0;
     margin-bottom: 3%;
+    display: flex;
 }
 
 .h1-container {
