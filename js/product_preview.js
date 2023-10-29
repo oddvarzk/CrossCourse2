@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const queryString = document.location.search;
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
-    const url = "http://cms.local/wp-json/wc/store/products/" + id;
+    const url = "https://www.oddvarkristiansen.no/wp-json/wc/store/products/" + id;
 
     async function callApi() {
         try {

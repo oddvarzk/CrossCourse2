@@ -2,7 +2,7 @@ const textContainer = document.querySelector(".jacket-box-grid");
 
 const discountContainer = document.querySelector(".jacket-box-second-grid");
 
-const url = "http://cms.local/wp-json/wc/store/products";
+const url = "https://www.oddvarkristiansen.no/wp-json/wc/store/products";
 
 async function callApi(){
     try {
