@@ -1,0 +1,33 @@
+.form-container{
+    display: flex;
+}
+.message-box{
+    display: flex;
+    height: 70px;
+    width: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.message-box::placeholder{
+    text-align: top;
+    align-items: top;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+.content-box{
+    margin-left: 5%;
+}
+.message-button{
+    background-color: white;
+
+    border-radius: 5px;
+    border-width: 1px;
+
+}
+
+.message-button:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,29 @@
+.h1-container{
+    display: flex;
+    justify-content: center;
+}
+p{
+    margin: 0;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-info{
+    display: grid;
+    row-gap: 10px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+}
+.login-box{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.grid-container{
+    display: grid;
+}

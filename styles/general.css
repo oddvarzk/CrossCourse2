@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    max-width: 100%;
+    min-width: 100%;
+    font-family: Arial;
+    min-height: 100vh;
+
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.header-area{
+    background-color: rgb(211, 208, 208);
+    color: white;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav,
+#menu-checkbox{
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+    width: 200px;
+    position: absolute;
+    z-index: 1000;
+    top: 80px;
+    right: 0;
+    left: 0;
+
+    background-color: rgb(211, 208, 208);
+    padding-left: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    color: black;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 15%;
+    margin-right: 100px;
+}
+.hamburger-icon{
+    color: black;
+    height: 30px;
+    margin-left: 20px;
+}
+.rainydays-logo{
+    height: 70px;
+    margin-left: 50px;
+}
+.account-icon{
+    height: 25px;
+    margin-left: 50%;
+    margin-right: 20px;
+}
+.search-icon{
+    height: 30px;
+}
+.shoppingcart-icon{
+    height: 40px;
+}
+.footer{
+    margin-top: auto;
+    margin-top: 40px;
+    background-color: rgb(211, 208, 208);
+    height: 120px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left-footer{
+    display: flex;
+    margin-left: 10%;
+    height: 90px;
+}
+.payment-icons{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+.click-text-footer{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.visa-icon{
+    height: 60px;
+    margin-right: 10%;
+}
+.mastercard-icon{
+    height: 38px;
+    margin-right: 10%;
+}
+.klarna-icon{
+    height: 40px;
+    margin-right: 5%;
+}
+.instagram-icon{
+    height: 40px;
+    cursor: pointer;
+    margin-left: 5%;
+}
+.facebook-icon{
+    height: 40px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+@media (max-width:700px){
+    .right-section{
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        justify-content: space-between;
+    }
+    .left-section{
+        display: flex;
+        align-items: center;
+        margin-right: none;
+        margin-left: none;
+    }
+    .rainydays-logo{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #menu-checkbox:checked ~ nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: absolute;
+        z-index: 1000;
+        top: 80px;
+        right: 0;
+        left: 0;
+    
+        padding-top: 10px;
+    }
+}

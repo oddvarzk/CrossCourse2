@@ -1,0 +1,37 @@
+.page-h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.jacket-box-grid{
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: grid;
+    column-gap: 4%;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+    justify-content: center;
+}
+.jacket-box{
+    text-align: center;
+
+    height: 350px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.jacket-image{
+    height: 200px;
+}
+.jacket-info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.jacket-title{
+    font-size: 18px;
+}
+.jacket-description{
+    max-width: fit-content;
+    font-size: 13px;
+}

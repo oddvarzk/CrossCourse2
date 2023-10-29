@@ -1,0 +1,53 @@
+.mensection-image{
+    height: 250px;
+    width: 80%;
+    object-fit: cover;
+    object-position: middle;
+}
+.womensection-image{
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 30% 10%;
+}
+.mensection-box{
+    display: flex;
+    justify-content: center;
+}
+.mensection-text-box{
+    display: flex;
+    justify-content: center;
+}
+.jacket-box-grid{
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: grid;
+    column-gap: 4%;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,300px));
+    justify-content: center;
+}
+.jacket-box{
+    text-align: center;
+
+    height: 350px;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+}
+.jacket-image{
+    height: 200px;
+}
+.jacket-info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.jacket-title{
+    font-weight: 600;
+    font-size: 18px;
+}
+.jacket-description{
+    max-width: fit-content;
+    font-size: 13px;
+}

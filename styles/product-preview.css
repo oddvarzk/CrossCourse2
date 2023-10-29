@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+.h1-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8%;
+}
+
+.jacket-box {
+    padding-top: 20px;
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    justify-content: left;
+}
+
+.jacket-image {
+    width: 200px;
+    height: 200px;
+}
+
+.jacket-info {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.jacket-image-box {
+    display: flex;
+    margin-left: 30px;
+}
+
+.jacket-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.jacket-description {
+    width: 70%;
+    min-width: 50%;
+}
+
+.buy-now-button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.buy-now-button:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: rgb(211, 208, 208);
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}
+
+.p1 {
+    font-weight: 700;
+}
